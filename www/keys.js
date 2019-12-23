@@ -1,3 +1,3 @@
 // This is a JavaScript file
-var appKey = "022c4f9c19cea0a1086a0fda18d8d5073b7a734295f733e10ff702e9e8a3471b";
-var clientKey = "50f0d19306ed60ca1bc99ec394a44c9b30e11b15e016a8fc32bb8053bd65f834";
+var appKey = "79664bf4358d1333046caab4b1b7ba774eb9f80fa91a06d6c1349bccb6ff2e5d";
+var clientKey = "b48e812189810aafc832fd43df483daf4928681d559e3aa904f7c61440c60b16";
