@@ -14,7 +14,7 @@
       var hand_choki=1;
       var hand_pa=2;
       // ハンド表示用配列
-      var hand_text = ["ぐー", "ちょき", "ぱー"];
+      var hand_text = ["G", "C", "P"];
       // 勝敗判定用変数（定数）
       var judge_win=0;
       var judge_draw=1;
@@ -26,7 +26,7 @@
         [judge_win, judge_loose, judge_draw],
       ];
       // 勝敗結果表示用配列
-      var judge_text = ["勝ち", "あいこ", "負け"];
+      var judge_text = ["win", "draw", "loose"];
 
       // 連勝数記録
       var win_num = 0;
@@ -109,7 +109,7 @@
 
           msg += win_num +  "連勝でした。<br>";
         } else {
-          msg += "1回も勝てませんでした。<br>次は頑張ろう";
+          msg += "1回も勝てませんでした。<br>次も頑張ろう";
         }
         $("#result2").html(msg);
         // ハンドボタン非表示
@@ -125,12 +125,12 @@
     </script>
 </head>
 <body>
-  <h1 class="text-white bg-primary">じゃんけん 連勝チャレンジ！</h1>
+  <h1>じゃんけん <p>連勝チャレンジ！</p></h1>
   <div id="highscore" class="text-white bg-secondary"></div>
-  <div class="mx-auto" style="width: 200px">
-    <a onclick="gu();" class="btn btn-outline-primary hand" role="button">ぐー</a>
-    <a onclick="choki();" class="btn btn-outline-primary hand" role="button">ちょき</a>
-    <a onclick="pa();" class="btn btn-outline-primary hand" role="button">ぱー</a>
+  <div class="mx-auto" style="width: auto">
+    <a onclick="gu();" class="btn btn-success text-light ml-1 mb-2" role="button" style="width:360px;font-size:25px">G U</a>
+    <a onclick="choki();" class="btn btn-success text-light ml-1 mb-2" role="button" style="width:360px;font-size:25px">C H O K I</a>
+    <a onclick="pa();" class="btn btn-success text-light ml-1 mb-2" role="button"style="width:360px;font-size:25px">P A</a>
     <a onclick="newgame();" class="btn btn-info text-white" id="newgame" role="button">New Game</a>
   </div>
   <div id="result" class="text-white bg-secondary">
